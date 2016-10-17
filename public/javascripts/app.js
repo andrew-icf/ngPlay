@@ -1,14 +1,14 @@
 angular
-  .module('ngPlay', ['ui-router'])
+  .module('ngPlay', ['ui.router'])
   .config(config);
 
 function config($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('/home', {
+    .state('home', {
       url: '/',
       controller: 'HomeController',
-      templateUrl: '/views/home.html'
+      templateUrl: './views/home.html'
     });
 }
